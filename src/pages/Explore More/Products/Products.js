@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useHistory } from "react-router";
+import Footer from "../../../shared/Footer/Footer";
 import Topbar from "../../../shared/Topbar/Topbar";
 import Product from "../Product/Product";
 
@@ -53,6 +54,7 @@ const Products = () => {
           ))}
         </Grid>
       </Container>
+      <Footer />
     </Box>
   );
 };

@@ -6,6 +6,7 @@ import ProductDetails from "./pages/Explore More/ProductDetails/ProductDetails";
 import Products from "./pages/Explore More/Products/Products";
 import Home from "./pages/Home/Home";
 import Login from "./pages/Login/Login";
+import NotFound from "./pages/NotFound/NotFound";
 import Register from "./pages/Register/Register";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 
@@ -32,6 +33,9 @@ function App() {
           <PrivateRoute path="/dashboard">
             <Dashboard />
           </PrivateRoute>
+          <Route path="*">
+            <NotFound />
+          </Route>
         </Switch>
       </AuthProvider>
     </Router>
